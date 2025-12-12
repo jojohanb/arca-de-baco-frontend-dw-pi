@@ -6,6 +6,57 @@
   background-color: #3b1c28;
 }
 
+.barrinhaTopo{
+  /* width: 100%;
+  background-color: #4c2232;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  width: 100%;
+  background-color: #4c2232;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 25px;
+  
+}
+
+.campoPesquisa{
+  /* background-color: #3b1c28;
+  border: #3b1c28;
+  border-radius: 5px;
+  width: 900px;
+  height: 30px; */
+  background-color: #3b1c28;
+  border: none;
+  border-radius: 40px;     
+  width: 700px;
+  height: 32px;
+  padding: 0 15px;
+  color: white;
+  outline: none;
+}
+::placeholder{
+  color: #241118;
+  padding: 10px;
+}
+
+.ReferenciaVinhos{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.OpVinhos{
+  height: 400px;
+  
+
+}
+
 .blocoTopo {
   display: flex;
   justify-content: space-between;
@@ -63,9 +114,12 @@
 .adegaImg {
   width: 90%;
   border-radius: 10px;
+  position: relative;
+  top: 100px;
 }
 
 .containerSobre {
+  /* height: 500px; */
   text-align: center;
   padding: 60px 6%;
   background-color: #4c2232;
@@ -87,7 +141,7 @@
   width: 33%;
   line-height: 1.6;
 }
-
+/* 
 @media (max-width: 900px) {
   .blocoTopo {
     flex-direction: column;
@@ -110,7 +164,7 @@
   .colunaSobre p {
     width: 100%;
   }
-}
+} */
 
 .containerExplore {
   display: flex;
@@ -183,13 +237,25 @@
   font-size: 1rem;
 }
 .navTopo {
-  width: 100%;
+  /* width: 100%;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8; */
+
+  /* width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  background-color: transparent; */
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  margin-left: auto;
+
+  /* width: auto; */
 }
 
 .navLogo {
@@ -202,11 +268,17 @@
   list-style: none;
   display: flex;
   gap: 35px;
+  margin: 0;
+  padding: 0;
+  /* list-style: none;
+  display: flex;
+  gap: 35px; */
 }
 
 .navLinks a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  color: white;
   font-size: 18px;
   transition: 0.2s;
 }
@@ -242,4 +314,14 @@
 .gridVinhos img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.navTopo {
+  background-color: #4c2232 !important;
+}
+.navLogo {
+  color: white !important;
+}
+.navLinks a {
+  color: #331420 !important;
 }

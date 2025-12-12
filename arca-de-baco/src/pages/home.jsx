@@ -14,19 +14,24 @@ import vinho6 from "./imagens/vinho6.png";
 import vinho7 from "./imagens/vinho7.png";
 import vinho8 from "./imagens/vinho8.png";
 import vinho9 from "./imagens/vinho9.png";  
+import opVinho from "./imagens/opVinho.png";
+
 
 export default function Home() {
   return (
     <div className="containerHome">
-      <nav className="navTopo">
-        <h2 className="navLogo">Arca de Baco</h2>
-        <ul className="navLinks">
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/compra">Compra</Link></li>
-          <li><Link to="/vinhos">Vinhos</Link></li>
-          <li><Link to="/login">Login</Link></li>
-        </ul>
-      </nav>
+      <div className="barrinhaTopo">
+  <input className="campoPesquisa" type="text" placeholder="Campo de pesquisa" />
+
+  <nav className="navTopo">
+    <ul className="navLinks">
+      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/compra">Compra</Link></li>
+      <li><Link to="/vinhos">Vinhos</Link></li>
+      <li><Link to="/login">Login</Link></li>
+    </ul>
+  </nav>
+</div>
 
       <div className="blocoTopo">
         <div className="textoTopo">
@@ -54,10 +59,14 @@ export default function Home() {
       <div className="containerSobre">
         <h2>Arca De Baco</h2>
         <div className="colunaSobre">
-          <p>Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar.</p>
-          <p>Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.</p>
-          <p>Descubra experiências únicas com vinhos selecionados do mundo todo.</p>
+          <p>Explore a essência dos grandes vinhos, onde cada garrafa revela tradição, arte e paixão. Permita-se viajar por aromas envolventes e sabores que atravessam gerações. Viva a experiência de degustar rótulos escolhidos com o mais alto cuidado.</p>
+          <p>Em nossa adega, cada vinho conta uma história que começa na terra e termina no seu paladar. Delicie-se com uma seleção refinada que combina elegância e autenticidade. Sinta a magia dos sabores que celebram o melhor da viticultura mundial.</p>
+          <p>Aprecie vinhos que encantam desde o primeiro aroma até o último gole. Nossa coleção reúne rótulos exclusivos que exaltam tradição, técnica e excelência. Descubra sensações únicas em cada detalhe desta viagem sensorial.</p>
         </div>
+      </div>
+      <div className="ReferenciaVinhos">
+        <img className="OpVinhos" src={opVinho} alt="Opvinhos" />
+
       </div>
       
       <div className="galeriaVinhos">
