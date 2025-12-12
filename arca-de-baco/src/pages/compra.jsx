@@ -12,7 +12,7 @@ export default function Compra() {
       precoProduto: 50,
       imagemProduto: vinhoReservado,
       descricaoProduto:
-        "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar. Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
+        "Bem-vindo à nossa adega, onde o aroma de vinhos vintage habilmente elaborados preenche o ar.  Mergulhe na rica história e nos sabores requintados da nossa coleção cuidadosamente selecionada.",
     },
     {
       id: 2,
@@ -34,9 +34,10 @@ export default function Compra() {
 
   return (
     <div className="containerCompra">
-
-      <nav className="navTopo">
-              <h2 className="navLogo">Arca de Baco</h2>
+      <div className="BarrinhaPesquisas">
+        <input className="campoDaPesquisa" type="text" placeholder="Campo de pesquisa "/>
+            <nav className="Topo">
+              {/* <h2 className="navLogo">Arca de Baco</h2> */}
               <ul className="navLinks">
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/compra">Compra</Link></li>
@@ -44,19 +45,28 @@ export default function Compra() {
                 <li><Link to="/login">Login</Link></li>
               </ul>
             </nav>
+      </div>
+      <hr />
+
 
       {listaProdutos.map((item) => (
         <div key={item.id} className="cardCompra">
+          <div className="itensCard">
           <img src={item.imagemProduto} alt={item.nomeProduto} className="imagemProduto" />
           <div className="conteudoCompra">
             <h2 className="nomeProduto">{item.nomeProduto}</h2>
             <p className="descricaoProduto">{item.descricaoProduto}</p>
 
             <div className="iconesAvaliacao">
-              <span>🍇</span>
-              <span>🍷</span>
+              {/* <span>🍇</span> */}
+              {/* <span>🍷</span> */}
               <span>⭐</span>
-              <span>🏆</span>
+              <span>⭐</span>
+              <span>⭐</span>
+              <span>⭐</span>
+
+
+              {/* <span>🏆</span> */}
             </div>
 
             <div className="precoBotao">
@@ -66,8 +76,12 @@ export default function Compra() {
           </div>
 
           <button className="botaoExcluir">🗑</button>
+          {/* <hr /> */}
+        </div>
+        <hr />
         </div>
       ))}
+      {/* <hr /> */}
 
       <div className="paginacaoCompra">
         <span>1</span>

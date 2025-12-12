@@ -111,7 +111,7 @@
   margin-bottom: 10px;
   color: #000;
 }
-.navTopo {
+/* .navTopo {
   width: 100%;
   padding: 20px 50px;
   display: flex;
@@ -119,12 +119,39 @@
   align-items: center;
   background-color: white;
   border-bottom: 1px solid #d8d8d8;
-}
+} */
+ .Topo{
+  background-color: white;
+  /* width: 100%; */
+  padding: 20px;
+  display: flex;
+ }
+
+ .BarrinhaPesquisas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+ }
+ ::placeholder{
+  color: gray;
+ }
+
+ .campoDaPesquisa{
+  border-radius: 10px;
+  border: #27232b;
+  background-color: #d3d3d3;
+  height: 30px;
+  width: 600px;
+
+ }
+
 
 .navLogo {
   font-size: 26px;
   font-weight: bold;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .navLinks {
@@ -135,11 +162,42 @@
 
 .navLinks a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   transition: 0.2s;
 }
 
 .navLinks a:hover {
   opacity: 0.6;
+}
+
+.cardCompra{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.itensCard{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* padding: 10px; */
+}
+
+.descricaoProduto {
+  white-space: pre-line;       
+  padding: 12px 15px;         
+  border-radius: 10px;         
+  width: 550px;                
+  min-height: 80px;           
+  color: #000;                 
+  line-height: 1.4;
+  margin: 10px 0;
+  overflow-wrap: break-word;   
+  border: white;
+}
+
+.colunaFooter .footerCompra{
+  color: #000 !important;
 }

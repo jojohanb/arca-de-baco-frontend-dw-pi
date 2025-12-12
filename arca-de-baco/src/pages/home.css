@@ -239,7 +239,7 @@ i{
   width: 90px;
 }
 
-.colunaFooter p {
+.colunaFooter .footer p {
   /* color: #80465c; */
   margin: 6px 0;
   font-size: 1rem;
