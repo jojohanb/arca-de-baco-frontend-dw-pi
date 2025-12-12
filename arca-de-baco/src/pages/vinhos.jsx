@@ -11,10 +11,11 @@ import imagemLogo from "./imagens/logoBaco.png";
 export default function Vinhos() {
   return (
     <div className="containerVinhos"> 
-    
-      <nav className="navTopo">
-        <h2 className="navLogo">Arca de Baco</h2>
+    <div className="barrinhaDoTopo">
+      <nav className="navTopinho">
+        <input className="campo" type="text" placeholder="Campo de pesquisa" />
 
+        {/* <h2 className="navLogo">Arca de Baco</h2> */}
         <ul className="navLinks">
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/compra">Compra</Link></li>
@@ -22,6 +23,8 @@ export default function Vinhos() {
           <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
+    </div>
+
 
      <div className="bannerVinhos">
        <img src={imagemBanner} alt="garrafas de vinho" />
@@ -40,6 +43,7 @@ export default function Vinhos() {
           <p className="descricaoVinho">
             Um vinho encorpado com notas frutadas e final marcante.
           </p>
+          <hr />
         </div>
 
         <div className="cardVinho">
