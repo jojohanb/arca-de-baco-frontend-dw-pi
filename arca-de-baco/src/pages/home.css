@@ -170,7 +170,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background-color: #3e1e2a;
   padding: 40px 0;
 }
 
@@ -214,9 +215,15 @@
 }
 
 .iconesSociais {
+  padding: 10px;
   font-size: 26px;
   margin-left: 15px;
   cursor: pointer;
+  gap: 10px;
+}
+i{
+  padding: 5px;
+
 }
 
 .footer {
@@ -233,9 +240,12 @@
 }
 
 .colunaFooter p {
+  /* color: #80465c; */
   margin: 6px 0;
   font-size: 1rem;
+  color: #ac5375 !important;
 }
+
 .navTopo {
   /* width: 100%;
   padding: 20px 50px;
